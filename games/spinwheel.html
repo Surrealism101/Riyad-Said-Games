@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Treasure Wheel · Ocean Arcade</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎡</text></svg>" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="bubbles"></div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="wave-emoji">🌊</span> Ocean Arcade</a>
+    <nav class="top-nav">
+      <a href="../index.html">Home</a>
+      <a href="tictactoe.html">Tic-Tac-Toe</a>
+      <a href="wordle.html">Wordle</a>
+      <a href="spinwheel.html">Prize Wheel</a>
+      <a href="connections.html">Connections</a>
+      <a href="crossword.html">Crossword</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="../index.html">← All games</a>
+    <div class="page-title">
+      <h1>🎡 Treasure Wheel</h1>
+      <p>Spin to see what the sea washes up. Land on a treasure to win it!</p>
+    </div>
+
+    <div class="wheel-wrap">
+      <div class="wheel-pointer"></div>
+      <canvas id="wheelCanvas" width="360" height="360"></canvas>
+      <div class="wheel-hub">🔱</div>
+    </div>
+
+    <div class="controls-row">
+      <button class="btn coral" id="spinBtn">🌀 Spin the Wheel</button>
+    </div>
+
+    <div class="prize-banner" id="prizeBanner"></div>
+
+    <div class="prize-log">
+      <strong>Recent spins</strong>
+      <ul id="prizeLog"></ul>
+    </div>
+  </main>
+
+  <div class="modal-overlay hidden" id="modalOverlay">
+    <div class="modal-box">
+      <h2 id="modalTitle">🎉 You Won!</h2>
+      <p id="modalText"></p>
+      <button class="btn" id="modalClose">Nice!</button>
+    </div>
+  </div>
+
+  <div class="wave-footer">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+      <path fill="#012a4a" d="M0,64L60,74.7C120,85,240,107,360,101.3C480,96,600,64,720,53.3C840,43,960,53,1080,64C1200,75,1320,85,1380,90.7L1440,96L1440,140L0,140Z"></path>
+    </svg>
+  </div>
+  <footer class="site-footer">Made with 🌊 for Riyad &amp; Said — Ocean Arcade</footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/spinwheel.js"></script>
+</body>
+</html>

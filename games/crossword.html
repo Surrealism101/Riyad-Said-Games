@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ocean Crossword · Ocean Arcade</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="bubbles"></div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span class="wave-emoji">🌊</span> Ocean Arcade</a>
+    <nav class="top-nav">
+      <a href="../index.html">Home</a>
+      <a href="tictactoe.html">Tic-Tac-Toe</a>
+      <a href="wordle.html">Wordle</a>
+      <a href="spinwheel.html">Prize Wheel</a>
+      <a href="connections.html">Connections</a>
+      <a href="crossword.html">Crossword</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="../index.html">← All games</a>
+    <div class="page-title">
+      <h1>📝 Ocean Crossword</h1>
+      <p>A mini crossword, stocked entirely with creatures of the deep.</p>
+    </div>
+
+    <div class="status-line" id="statusLine">&nbsp;</div>
+
+    <div class="crossword-wrap">
+      <div class="cw-grid" id="cwGrid"></div>
+      <div class="cw-clues">
+        <h4>Across</h4>
+        <ul id="acrossClues"></ul>
+        <h4>Down</h4>
+        <ul id="downClues"></ul>
+      </div>
+    </div>
+
+    <div class="controls-row">
+      <button class="btn" id="checkBtn">✅ Check</button>
+      <button class="btn secondary" id="revealBtn">👀 Reveal</button>
+      <button class="btn secondary" id="clearBtn">🧹 Clear</button>
+    </div>
+  </main>
+
+  <div class="wave-footer">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+      <path fill="#012a4a" d="M0,64L60,74.7C120,85,240,107,360,101.3C480,96,600,64,720,53.3C840,43,960,53,1080,64C1200,75,1320,85,1380,90.7L1440,96L1440,140L0,140Z"></path>
+    </svg>
+  </div>
+  <footer class="site-footer">Made with 🌊 for Riyad &amp; Said — Ocean Arcade</footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/crossword.js"></script>
+</body>
+</html>
